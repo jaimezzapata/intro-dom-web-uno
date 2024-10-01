@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.form {
+    display: inherit;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 40%;
+    height: 30%;
+    backdrop-filter: blur(10%);
+    background-color: rgb(246, 243, 243, 0.1);
+    box-shadow: 5px 5px 10px white;
+}

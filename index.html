@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <form class="form" action="">
+        <label for="">Usuario</label>
+        <input type="text">
+        <label for="">Contraseña</label>
+        <input type="text">
+        <div class="buttons">
+            <button type="button" onclick="iniciarSesion()">Evento Click</button>
+            <button type="button" ondblclick="iniciarSesion()">Evento Doble Click</button>
+            <button type="button" onmouseenter="iniciarSesion()">Evento Ingreso mouse</button>
+            <button type="button" onmouseout="iniciarSesion()">Evento Salida mouse</button>
+        </div>
+        <!-- <input type="button" value="Iniciar Sesión"> -->
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
