@@ -49,17 +49,19 @@ body {
     cursor: pointer;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .form div button:first-child::after,
 .form div button:first-child::before {
     position: absolute;
     content: '';
-    /* width: 10px; */
+    width: 0%;
     height: 100%;
     /* background-color: red; */
     left: 0;
     top: 0;
+    transition: ease-in-out all .6s;
 }
 
 .form div button:first-child:hover::after {

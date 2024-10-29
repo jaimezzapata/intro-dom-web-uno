@@ -10,26 +10,26 @@
 </head>
 
 <body>
-    <form class="form" action="">
+    <form id="form-login" class="form" action="">
         <label id="label" for="">Usuario</label>
         <input id="usuario" type="text">
         <label for="">Contraseña</label>
         <input id="contrasena" type="text">
         <div class="buttons">
             <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
-            <button type="button">¿No tiene una cuenta?</button>
+            <button id="btnLogin" type="button">¿No tiene una cuenta?</button>
         </div>
     </form>
 
-    <form class="form" action="" style="display: none;">
-        <input id="rnombre" type="text">
-        <input id="rcorreo" type="text">
-        <input id="rcontrasena" type="text">
-        <input id="rprofesion" type="text">
-        <input id="rusuario" type="text">
+    <form id="form-register" class="form" action="" style="display: none;">
+        <input placeholder="Nombre" id="rnombre" type="text">
+        <input placeholder="Correo" id="rcorreo" type="text">
+        <input placeholder="Contraseña" id="rcontrasena" type="text">
+        <input placeholder="Profesion" id="rprofesion" type="text">
+        <input placeholder="Usuario" id="rusuario" type="text">
         <div>
             <button onclick="registrarUsuario()" type="button">Registrar</button>
-            <button>¿Ya tiene una cuenta?</button>
+            <button type="button" id="btnRegister">¿Ya tiene una cuenta?</button>
         </div>
     </form>
     <script src="./script.js"></script>

@@ -56,3 +56,16 @@ let objeto = {
 
 console.log(objeto.nombre)
 console.log(objeto.profesion)
+
+
+document.getElementById('btnLogin').addEventListener('click', mostrarFormularioRegistro)
+document.getElementById('btnRegister').addEventListener('click', mostrarFormularioLogin)
+
+function mostrarFormularioRegistro() {
+    document.getElementById('form-login').style.display = 'none'
+    document.getElementById('form-register').style.display = 'flex'
+}
+function mostrarFormularioLogin() {
+    document.getElementById('form-login').style.display = 'flex'
+    document.getElementById('form-register').style.display = 'none'
+}
