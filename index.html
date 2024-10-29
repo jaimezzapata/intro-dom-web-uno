@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/icono.png" type="image/x-icon">
     <title>DOM</title>
 </head>
 
@@ -15,21 +16,21 @@
         <label for="">Contraseña</label>
         <input id="contrasena" type="text">
         <div class="buttons">
-            <button type="button" onclick="iniciarSesion()">Evento Click</button>
-            <button type="button" ondblclick="iniciarSesion()">Evento Doble Click</button>
-            <button type="button" onmouseenter="iniciarSesion()">Evento Ingreso mouse</button>
-            <button type="button" onmouseout="iniciarSesion()">Evento Salida mouse</button>
+            <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+            <button type="button">¿No tiene una cuenta?</button>
         </div>
-        <!-- <input type="button" value="Iniciar Sesión"> -->
     </form>
 
-    <form action="">
+    <form class="form" action="" style="display: none;">
         <input id="rnombre" type="text">
         <input id="rcorreo" type="text">
         <input id="rcontrasena" type="text">
         <input id="rprofesion" type="text">
         <input id="rusuario" type="text">
-        <button onclick="registrarUsuario()" type="button">Registrar</button>
+        <div>
+            <button onclick="registrarUsuario()" type="button">Registrar</button>
+            <button>¿Ya tiene una cuenta?</button>
+        </div>
     </form>
     <script src="./script.js"></script>
 </body>
