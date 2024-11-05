@@ -1,19 +1,5 @@
-let usuarios = [
-    {
-        nombre: 'Jaime Zapata Valencia',
-        correo: 'correo@correo.com',
-        contrasena: '1234567',
-        profesion: 'Developer',
-        usuario: 'admin'
-    },
-    {
-        nombre: 'Mariana Reestrepo',
-        correo: 'correo@correo.com',
-        contrasena: '1234567',
-        profesion: 'UX/UI',
-        usuario: 'mariana'
-    },
-]
+import { usuarios } from '/database.js'
+
 console.log(usuarios)
 function iniciarSesion() {
     let usuario = document.getElementById("usuario").value
@@ -23,9 +9,36 @@ function iniciarSesion() {
     console.log(auth)
     // usuarios.some(()=>)
     if (auth) {
-        console.log('Inicio de sesión')
+        let timerInterval;
+        Swal.fire({
+            title: "Bienvenido",
+            html: "Será redireccionado <h1></h1> milliseconds.",
+            timer: 1000,
+            timerProgressBar: true,
+            icon: 'success',
+            didOpen: () => {
+                Swal.showLoading();
+                const timer = Swal.getPopup().querySelector("h1");
+                timerInterval = setInterval(() => {
+                    timer.textContent = `${Swal.getTimerLeft()}`;
+                }, 100);
+            },
+            willClose: () => {
+                clearInterval(timerInterval);
+                window.location.href = 'panel.html'
+            }
+        }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                console.log("I was closed by the timer");
+            }
+        });
     } else {
-        console.log('Error de credenciales')
+        Swal.fire({
+            title: "Error",
+            text: "Usuario y/o contraseña incorrectos o no existen",
+            icon: "error"
+        });
     }
 }
 
