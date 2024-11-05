@@ -1,5 +1,8 @@
 import { usuarios } from '/database.js'
 
+document.getElementById('btnIniciarSesion').addEventListener('click', iniciarSesion)
+document.getElementById('btnRegistrarUsuario').addEventListener('click', registrarUsuario)
+
 console.log(usuarios)
 function iniciarSesion() {
     let usuario = document.getElementById("usuario").value
