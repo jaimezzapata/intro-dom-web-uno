@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panel de Control - Recetas</title>
-    <link rel="stylesheet" href="panel.css">
-</head>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav class="sidebar">
-            <h2>Panel de Control</h2>
-            <ul class="menu">
-                <li><a id="btnVegetarianas">Recetas Vegetarianas</a></li>
-                <li><a id="btnNoVegetarianas">Recetas No Vegetarianas</a></li>
-                <li><a id="cerrarSesion"">Cerrar Sesión</a></li>
-            </ul>
-        </nav>
+      <nav class="sidebar">
+        <h2>Panel de Control</h2>
+        <ul class="menu">
+          <li><a id="btnVegetarianas">Recetas Vegetarianas</a></li>
+          <li><a id="btnNoVegetarianas">Recetas No Vegetarianas</a></li>
+          <li><a id="cerrarSesion">Cerrar Sesión</a></li>
+        </ul>
+      </nav>
 
-        <main class="main-content">
-            <section id="recetas-vegetarianas" style="display: none;">
-                <h1>Recetas Vegetarianas</h1>
-                <section id="listadoRecetasVegetarianas">
+      <main class="main-content">
+        <section id="recetas-vegetarianas" style="display: none">
+          <h1>Recetas Vegetarianas</h1>
+          <section id="listadoRecetasVegetarianas"></section>
+        </section>
 
-                </section>
-            </section>
-
-            <section id="recetas-no-vegetarianas" style="display: none;">
-                <h1>Recetas No Vegetarianas</h1>
-                <section id="listadoRecetasNoVegetarianas">
-
-                </section>
-            </section>
-        </main>
+        <section id="recetas-no-vegetarianas" style="display: none">
+          <h1>Recetas No Vegetarianas</h1>
+          <section id="listadoRecetasNoVegetarianas"></section>
+        </section>
+      </main>
     </div>
     <script type="module" src="/main.js"></script>
-</body>
-
+  </body>
 </html>
