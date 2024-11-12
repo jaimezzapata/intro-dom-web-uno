@@ -1,7 +1,8 @@
 import { recetasNoVegetarianas, recetasVegetarianas } from "./database.js";
 
 function crearCardReceta() {
-  recetasVegetarianas.map(() => {
+  recetasVegetarianas.map((element) => {
+    // console.log(element.ingredientes);
     let nombre = document.createElement("h3");
     let descripcion = document.createElement("p");
     let dificultad = document.createElement("p");
@@ -14,6 +15,16 @@ function crearCardReceta() {
     let listadoPasos = document.createElement("ol");
     let paso = document.createElement("li");
     let card = document.createElement("div");
+    nombre.textContent = element.nombre;
+    dificultad.textContent = element.dificultad;
+    descripcion.textContent = element.descripcion;
+    tiempoPreparacion.textContent = element.tiempo;
+    element.ingredientes.map((index) => {
+      ingrediente.textContent = index;
+      listadoIngredientes.append(ingrediente);
+    });
+    tipo.textContent = element.tipo;
+    ingredientes.textContent = "Ingredientes: ";
     listadoPasos.append(paso, paso, paso);
     listadoIngredientes.append(ingrediente, ingrediente, ingrediente);
     card.append(
