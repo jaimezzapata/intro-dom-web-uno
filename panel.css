@@ -69,3 +69,54 @@ body {
   color: #333333;
   margin-bottom: 1em;
 }
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #333333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p,
+.card ul,
+.card ol {
+  color: #666666;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.card ul,
+.card ol {
+  padding-left: 20px;
+}
+
+.card ul li,
+.card ol li {
+  list-style-position: inside;
+}
+
+.highlight {
+  color: #333333;
+  font-weight: bold;
+}
