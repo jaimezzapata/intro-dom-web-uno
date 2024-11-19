@@ -32,6 +32,7 @@ export const recetasVegetarianas = [
     ],
     tiempo: "20 minutos",
     tipo: "Ensalada",
+    img: "/img/1.jpg",
   },
   {
     id: 2,
@@ -48,6 +49,7 @@ export const recetasVegetarianas = [
     ],
     tiempo: "30 minutos",
     tipo: "Tacos",
+    img: "/img/2.jpg",
   },
   {
     id: 3,
@@ -58,6 +60,7 @@ export const recetasVegetarianas = [
     ingredientes: ["calabaza", "cebolla", "ajo", "caldo de verduras", "crema"],
     tiempo: "40 minutos",
     tipo: "Sopa",
+    img: "/img/3.jpg",
   },
   {
     id: 4,
@@ -74,6 +77,7 @@ export const recetasVegetarianas = [
     ],
     tiempo: "25 minutos",
     tipo: "Plato principal",
+    img: "/img/4.jpg",
   },
   {
     id: 5,
@@ -84,6 +88,7 @@ export const recetasVegetarianas = [
     ingredientes: ["pasta", "albahaca", "piñones", "ajo", "aceite de oliva"],
     tiempo: "15 minutos",
     tipo: "Plato principal",
+    img: "/img/5.jpg",
   },
   {
     id: 6,
@@ -94,6 +99,7 @@ export const recetasVegetarianas = [
     ingredientes: ["garbanzos", "ajo", "cebolla", "especias", "aceite"],
     tiempo: "30 minutos",
     tipo: "Aperitivo",
+    img: "/img/6.jpg",
   },
   {
     id: 7,
@@ -104,6 +110,7 @@ export const recetasVegetarianas = [
     ingredientes: ["tortilla", "hummus", "pepino", "lechuga", "zanahoria"],
     tiempo: "10 minutos",
     tipo: "Aperitivo",
+    img: "/img/7.jpg",
   },
   {
     id: 8,
@@ -124,6 +131,7 @@ export const recetasVegetarianas = [
     ],
     tiempo: "45 minutos",
     tipo: "Plato principal",
+    img: "/img/8.jpg",
   },
   {
     id: 9,
@@ -140,6 +148,7 @@ export const recetasVegetarianas = [
     ],
     tiempo: "50 minutos",
     tipo: "Plato principal",
+    img: "/img/9.jpg",
   },
   {
     id: 10,
@@ -156,6 +165,7 @@ export const recetasVegetarianas = [
     ],
     tiempo: "35 minutos",
     tipo: "Plato principal",
+    img: "/img/10.jpg",
   },
 ];
 

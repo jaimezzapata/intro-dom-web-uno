@@ -1,6 +1,7 @@
 import { recetasNoVegetarianas, recetasVegetarianas } from "./database.js";
 
 function crearCardReceta() {
+  // document.getElementById("listadoRecetasVegetarianas").innerHTML = "";
   recetasVegetarianas.map((element) => {
     // console.log(element.ingredientes);
     let nombre = document.createElement("h3");
