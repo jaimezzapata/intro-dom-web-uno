@@ -10,7 +10,6 @@ function crearCardReceta() {
     let tipo = document.createElement("p");
     let ingredientes = document.createElement("p");
     let listadoIngredientes = document.createElement("ul");
-    let ingrediente = document.createElement("li");
     let pasos = document.createElement("p");
     let listadoPasos = document.createElement("ol");
     let paso = document.createElement("li");
@@ -19,14 +18,19 @@ function crearCardReceta() {
     dificultad.textContent = element.dificultad;
     descripcion.textContent = element.descripcion;
     tiempoPreparacion.textContent = element.tiempo;
+    ingredientes.textContent = "Ingredientes: ";
     element.ingredientes.map((index) => {
+      let ingrediente = document.createElement("li");
       ingrediente.textContent = index;
-      listadoIngredientes.append(ingrediente);
+      listadoIngredientes.appendChild(ingrediente);
+    });
+    pasos.textContent = "Pasos:";
+    element.pasos.map((index) => {
+      let paso = document.createElement("li");
+      paso.textContent = index;
+      listadoPasos.appendChild(paso);
     });
     tipo.textContent = element.tipo;
-    ingredientes.textContent = "Ingredientes: ";
-    listadoPasos.append(paso, paso, paso);
-    listadoIngredientes.append(ingrediente, ingrediente, ingrediente);
     card.append(
       nombre,
       descripcion,
