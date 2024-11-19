@@ -43,10 +43,13 @@ function crearCardReceta() {
       listadoPasos
     );
     console.log(card);
+    card.classList.add("card");
+    agregarRecetaHtml(card);
   });
 }
-
-function agregarRecetaHtml() {}
+function agregarRecetaHtml(card) {
+  document.getElementById("listadoRecetasVegetarianas").append(card);
+}
 
 document
   .getElementById("btnVegetarianas")
